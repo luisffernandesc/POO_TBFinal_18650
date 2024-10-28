@@ -13,7 +13,6 @@ namespace TourismManagementSystem.Classes
             public string Email { get; set; }
             public List<Reservation> Reservations { get; set; } = new List<Reservation>();
 
-            // Add any other properties or methods related to Customer here
         }
 }
 

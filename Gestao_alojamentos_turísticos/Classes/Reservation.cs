@@ -14,6 +14,5 @@ namespace TourismManagementSystem.Classes
         public DateTime CheckInDate { get; set; }
         public DateTime CheckOutDate { get; set; }
 
-        // Add any other properties or methods related to Reservation here
     }
 }
