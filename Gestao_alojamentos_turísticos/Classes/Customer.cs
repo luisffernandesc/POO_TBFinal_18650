@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gestao_alojamentos_turísticos.Classes
+namespace TourismManagementSystem.Classes
 {
         public class Customer
         {
