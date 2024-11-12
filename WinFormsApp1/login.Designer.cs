@@ -57,7 +57,7 @@
             label1.Location = new Point(256, 201);
             label1.Name = "label1";
             label1.Size = new Size(78, 20);
-            label1.TabIndex = 2;
+            label1.TabIndex = 3;
             label1.Text = "Username:";
             // 
             // label2
@@ -66,7 +66,7 @@
             label2.Location = new Point(258, 250);
             label2.Name = "label2";
             label2.Size = new Size(73, 20);
-            label2.TabIndex = 3;
+            label2.TabIndex = 4;
             label2.Text = "Password:";
             // 
             // loginButton
@@ -74,7 +74,7 @@
             loginButton.Location = new Point(351, 303);
             loginButton.Name = "loginButton";
             loginButton.Size = new Size(94, 29);
-            loginButton.TabIndex = 4;
+            loginButton.TabIndex = 2;
             loginButton.Text = "Login";
             loginButton.UseVisualStyleBackColor = true;
             loginButton.Click += button1_Click;
@@ -89,7 +89,6 @@
             titleLabel.TabIndex = 5;
             titleLabel.Text = "Tourism Management System";
             titleLabel.TextAlign = ContentAlignment.TopCenter;
-            titleLabel.Click += label3_Click;
             // 
             // Form1
             // 

@@ -1,3 +1,5 @@
+using WinFormsApp1.Classes;
+
 namespace WinFormsApp1
 {
     public partial class login : Form
@@ -9,18 +11,23 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBoxPassword.Text == "ola" && textBoxUsername.Text == "Luis")
+            User user = new User();
+
+            if (user.Load(textBoxUsername.Text))
             {
-                management window = new management();
-                window.Show();
-            }
-            
-            
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+                if (textBoxPassword.Text == user.Password) 
+                {
+                    PropertyManagement window = new PropertyManagement();
+                    window.Show();
+                    this.Hide();
+                } else
+                {
+                    MessageBox.Show("Wrong Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            } else
+            {
+                MessageBox.Show("Wrong User", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }    
         }
     }
 }

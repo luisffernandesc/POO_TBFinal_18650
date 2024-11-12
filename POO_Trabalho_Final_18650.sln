@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gestao_alojamentos_turísticos", "Gestao_alojamentos_turísticos\Gestao_alojamentos_turísticos.csproj", "{BFAD9809-5DD8-4C3F-98F5-8D48863B8CC6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{7ECD5017-3604-4428-8E10-BB9EF042AF88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{7ECD5017-3604-4428-8E10-BB9EF042AF88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BFAD9809-5DD8-4C3F-98F5-8D48863B8CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BFAD9809-5DD8-4C3F-98F5-8D48863B8CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BFAD9809-5DD8-4C3F-98F5-8D48863B8CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BFAD9809-5DD8-4C3F-98F5-8D48863B8CC6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7ECD5017-3604-4428-8E10-BB9EF042AF88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7ECD5017-3604-4428-8E10-BB9EF042AF88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ECD5017-3604-4428-8E10-BB9EF042AF88}.Release|Any CPU.ActiveCfg = Release|Any CPU

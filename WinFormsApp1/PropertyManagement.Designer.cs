@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class management
+    partial class PropertyManagement
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +37,7 @@
             textBoxAddress = new TextBox();
             comboBoxTypes = new ComboBox();
             label5 = new Label();
-            textBox1 = new TextBox();
+            textBoxPrice = new TextBox();
             SuspendLayout();
             // 
             // listBox1
@@ -47,6 +47,7 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(150, 384);
             listBox1.TabIndex = 0;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -56,7 +57,6 @@
             label1.Size = new Size(50, 20);
             label1.TabIndex = 1;
             label1.Text = "Nome";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -115,21 +115,20 @@
             label5.Size = new Size(106, 20);
             label5.TabIndex = 9;
             label5.Text = "Preço p/ Noite";
-            label5.Click += label5_Click;
             // 
-            // textBox1
+            // textBoxPrice
             // 
-            textBox1.Location = new Point(593, 108);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(151, 27);
-            textBox1.TabIndex = 10;
+            textBoxPrice.Location = new Point(593, 108);
+            textBoxPrice.Name = "textBoxPrice";
+            textBoxPrice.Size = new Size(151, 27);
+            textBoxPrice.TabIndex = 10;
             // 
             // management
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxPrice);
             Controls.Add(label5);
             Controls.Add(comboBoxTypes);
             Controls.Add(textBoxAddress);
@@ -156,6 +155,6 @@
         private TextBox textBoxAddress;
         private ComboBox comboBoxTypes;
         private Label label5;
-        private TextBox textBox1;
+        private TextBox textBoxPrice;
     }
 }
