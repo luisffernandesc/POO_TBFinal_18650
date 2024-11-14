@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="class_win_forms_app1_1_1login" kind="class" language="C#" prot="public">
+    <compoundname>WinFormsApp1::login</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_win_forms_app1_1_1login_1a8481bf0b4f58d78a967884f13ee9e9bd" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer WinFormsApp1.login.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>WinFormsApp1.login.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="login.Designer.cs" line="8" column="48" bodyfile="login.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1login_1ae9acbfbaf14504b90c4d75811174159d" prot="private" static="no" mutable="no">
+        <type>TextBox</type>
+        <definition>TextBox WinFormsApp1.login.textBoxUsername</definition>
+        <argsstring></argsstring>
+        <name>textBoxUsername</name>
+        <qualifiedname>WinFormsApp1.login.textBoxUsername</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="login.Designer.cs" line="111" column="25" bodyfile="login.Designer.cs" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1login_1af721ab478f127716820213fd484dc217" prot="private" static="no" mutable="no">
+        <type>TextBox</type>
+        <definition>TextBox WinFormsApp1.login.textBoxPassword</definition>
+        <argsstring></argsstring>
+        <name>textBoxPassword</name>
+        <qualifiedname>WinFormsApp1.login.textBoxPassword</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="login.Designer.cs" line="112" column="25" bodyfile="login.Designer.cs" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1login_1ae70da4c8f86d71a58ca7554ff3fc2578" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label WinFormsApp1.login.label1</definition>
+        <argsstring></argsstring>
+        <name>label1</name>
+        <qualifiedname>WinFormsApp1.login.label1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="login.Designer.cs" line="113" column="23" bodyfile="login.Designer.cs" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1login_1a73f4269b7fa1353c8018d5788ebffafa" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label WinFormsApp1.login.label2</definition>
+        <argsstring></argsstring>
+        <name>label2</name>
+        <qualifiedname>WinFormsApp1.login.label2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="login.Designer.cs" line="114" column="23" bodyfile="login.Designer.cs" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1login_1a46d8dbaac6f57629983b044d8f4b9987" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button WinFormsApp1.login.loginButton</definition>
+        <argsstring></argsstring>
+        <name>loginButton</name>
+        <qualifiedname>WinFormsApp1.login.loginButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="login.Designer.cs" line="115" column="24" bodyfile="login.Designer.cs" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1login_1aa4252e93db61bb311fa5fda2dcab7883" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label WinFormsApp1.login.titleLabel</definition>
+        <argsstring></argsstring>
+        <name>titleLabel</name>
+        <qualifiedname>WinFormsApp1.login.titleLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="login.Designer.cs" line="116" column="23" bodyfile="login.Designer.cs" bodystart="116" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_win_forms_app1_1_1login_1ad5a009aaf1aa0cbd745e2186d1ee8cfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WinFormsApp1.login.login</definition>
+        <argsstring>()</argsstring>
+        <name>login</name>
+        <qualifiedname>WinFormsApp1.login.login</qualifiedname>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_win_forms_app1_1_1login" kindref="compound">login</ref> form. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Login.cs" line="13" column="16" bodyfile="Login.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_win_forms_app1_1_1login_1ad6c74a1c8cf46bb9f4111d3249d4c2b2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WinFormsApp1.login.button1_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>button1_Click</name>
+        <qualifiedname>WinFormsApp1.login.button1_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Event handler for the login button click. Attempts to authenticate the user based on the entered username and password. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Login.cs" line="24" column="22" bodyfile="Login.cs" bodystart="24" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_win_forms_app1_1_1login_1ac6ca4a5bc35930809d060f72fe63fb42" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WinFormsApp1.login.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>WinFormsApp1.login.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="login.Designer.cs" line="29" column="22" bodyfile="login.Designer.cs" bodystart="29" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_win_forms_app1_1_1login_1a6c57d7db262eb76cb918681d913d19f9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void WinFormsApp1.login.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>WinFormsApp1.login.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="login.Designer.cs" line="14" column="33" bodyfile="login.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Form for user login within the tourism management system. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>WinFormsApp1.login</label>
+        <link refid="class_win_forms_app1_1_1login"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>WinFormsApp1.login</label>
+        <link refid="class_win_forms_app1_1_1login"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Login.cs" line="8" column="19" bodyfile="login.Designer.cs" bodystart="4" bodyend="117"/>
+    <listofallmembers>
+      <member refid="class_win_forms_app1_1_1login_1ad6c74a1c8cf46bb9f4111d3249d4c2b2" prot="private" virt="non-virtual"><scope>WinFormsApp1::login</scope><name>button1_Click</name></member>
+      <member refid="class_win_forms_app1_1_1login_1a8481bf0b4f58d78a967884f13ee9e9bd" prot="private" virt="non-virtual"><scope>WinFormsApp1::login</scope><name>components</name></member>
+      <member refid="class_win_forms_app1_1_1login_1a6c57d7db262eb76cb918681d913d19f9" prot="protected" virt="non-virtual"><scope>WinFormsApp1::login</scope><name>Dispose</name></member>
+      <member refid="class_win_forms_app1_1_1login_1ac6ca4a5bc35930809d060f72fe63fb42" prot="private" virt="non-virtual"><scope>WinFormsApp1::login</scope><name>InitializeComponent</name></member>
+      <member refid="class_win_forms_app1_1_1login_1ae70da4c8f86d71a58ca7554ff3fc2578" prot="private" virt="non-virtual"><scope>WinFormsApp1::login</scope><name>label1</name></member>
+      <member refid="class_win_forms_app1_1_1login_1a73f4269b7fa1353c8018d5788ebffafa" prot="private" virt="non-virtual"><scope>WinFormsApp1::login</scope><name>label2</name></member>
+      <member refid="class_win_forms_app1_1_1login_1ad5a009aaf1aa0cbd745e2186d1ee8cfc" prot="public" virt="non-virtual"><scope>WinFormsApp1::login</scope><name>login</name></member>
+      <member refid="class_win_forms_app1_1_1login_1a46d8dbaac6f57629983b044d8f4b9987" prot="private" virt="non-virtual"><scope>WinFormsApp1::login</scope><name>loginButton</name></member>
+      <member refid="class_win_forms_app1_1_1login_1af721ab478f127716820213fd484dc217" prot="private" virt="non-virtual"><scope>WinFormsApp1::login</scope><name>textBoxPassword</name></member>
+      <member refid="class_win_forms_app1_1_1login_1ae9acbfbaf14504b90c4d75811174159d" prot="private" virt="non-virtual"><scope>WinFormsApp1::login</scope><name>textBoxUsername</name></member>
+      <member refid="class_win_forms_app1_1_1login_1aa4252e93db61bb311fa5fda2dcab7883" prot="private" virt="non-virtual"><scope>WinFormsApp1::login</scope><name>titleLabel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

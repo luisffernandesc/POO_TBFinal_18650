@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.11.0" xml:lang="en-US">
+  <compound refid="class_win_forms_app1_1_1login" kind="class"><name>WinFormsApp1::login</name>
+    <member refid="class_win_forms_app1_1_1login_1a8481bf0b4f58d78a967884f13ee9e9bd" kind="variable"><name>components</name></member>
+    <member refid="class_win_forms_app1_1_1login_1ae9acbfbaf14504b90c4d75811174159d" kind="variable"><name>textBoxUsername</name></member>
+    <member refid="class_win_forms_app1_1_1login_1af721ab478f127716820213fd484dc217" kind="variable"><name>textBoxPassword</name></member>
+    <member refid="class_win_forms_app1_1_1login_1ae70da4c8f86d71a58ca7554ff3fc2578" kind="variable"><name>label1</name></member>
+    <member refid="class_win_forms_app1_1_1login_1a73f4269b7fa1353c8018d5788ebffafa" kind="variable"><name>label2</name></member>
+    <member refid="class_win_forms_app1_1_1login_1a46d8dbaac6f57629983b044d8f4b9987" kind="variable"><name>loginButton</name></member>
+    <member refid="class_win_forms_app1_1_1login_1aa4252e93db61bb311fa5fda2dcab7883" kind="variable"><name>titleLabel</name></member>
+    <member refid="class_win_forms_app1_1_1login_1ad5a009aaf1aa0cbd745e2186d1ee8cfc" kind="function"><name>login</name></member>
+    <member refid="class_win_forms_app1_1_1login_1ad6c74a1c8cf46bb9f4111d3249d4c2b2" kind="function"><name>button1_Click</name></member>
+    <member refid="class_win_forms_app1_1_1login_1ac6ca4a5bc35930809d060f72fe63fb42" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_win_forms_app1_1_1login_1a6c57d7db262eb76cb918681d913d19f9" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_win_forms_app1_1_1_program" kind="class"><name>WinFormsApp1::Program</name>
+    <member refid="class_win_forms_app1_1_1_program_1a6345310bbfc6ae4ef51f4c84c0c1f38a" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_win_forms_app1_1_1_property_management" kind="class"><name>WinFormsApp1::PropertyManagement</name>
+    <member refid="class_win_forms_app1_1_1_property_management_1a16798c73800429b3a769be5846d539a0" kind="variable"><name>UserProperties</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a37faf2344716d44fd5d244cddc5efe04" kind="variable"><name>components</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a55fddb4a15c6626f199503d614ffc931" kind="variable"><name>listBox1</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a7259bf29752bb900220486cabb11bb3a" kind="variable"><name>label1</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a1e4d521baa2a46b338819e0fe509701f" kind="variable"><name>label2</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1aa7a7ea8da8a12a359d11a8a59537bed0" kind="variable"><name>label3</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1ad17dd18813d132e7938b5d3cd1cb8ef2" kind="variable"><name>label4</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a266c66c0846261051d80fd854a2a09b2" kind="variable"><name>textBoxNameRental</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a186a4e0d4416e1a3c900fc20110127a5" kind="variable"><name>textBoxAddress</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a6405aa980a5bd7d33d496434b3a791f1" kind="variable"><name>comboBoxTypes</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a296e9abfcbc5c06ba94f1bf063a6042a" kind="variable"><name>label5</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a450e1a16dbf395a1bfd86c8dd3273d44" kind="variable"><name>textBoxPrice</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a813081e011065fe1d084de5bb5dd5022" kind="variable"><name>dataGridView1</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a1a2aa39b877aafbb74c9c0574006f24a" kind="function"><name>PropertyManagement</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a8722f2077ed383c900b7bf925c6d29f2" kind="function"><name>listBox1_SelectedIndexChanged</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1a9bd3665f3aa6f200759cf6eb396049c7" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_win_forms_app1_1_1_property_management_1acf390506258e4f1d9c20576cc6514c03" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data_1_1_entity_1_1_core_1_1_metadata_1_1_edm" kind="namespace"><name>System::Data::Entity::Core::Metadata::Edm</name>
+  </compound>
+  <compound refid="namespace_system_1_1_drawing" kind="namespace"><name>System::Drawing</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_forms" kind="namespace"><name>System::Windows::Forms</name>
+  </compound>
+  <compound refid="namespace_win_forms_app1" kind="namespace"><name>WinFormsApp1</name>
+  </compound>
+  <compound refid="namespace_win_forms_app1_1_1_classes" kind="namespace"><name>WinFormsApp1::Classes</name>
+  </compound>
+  <compound refid="_login_8cs" kind="file"><name>Login.cs</name>
+  </compound>
+  <compound refid="login_8_designer_8cs" kind="file"><name>login.Designer.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_property_management_8cs" kind="file"><name>PropertyManagement.cs</name>
+  </compound>
+  <compound refid="_property_management_8_designer_8cs" kind="file"><name>PropertyManagement.Designer.cs</name>
+  </compound>
+</doxygenindex>

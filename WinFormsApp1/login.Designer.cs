@@ -90,7 +90,7 @@
             titleLabel.Text = "Tourism Management System";
             titleLabel.TextAlign = ContentAlignment.TopCenter;
             // 
-            // Form1
+            // login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -101,7 +101,7 @@
             Controls.Add(label1);
             Controls.Add(textBoxUsername);
             Controls.Add(textBoxPassword);
-            Name = "Form1";
+            Name = "login";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();

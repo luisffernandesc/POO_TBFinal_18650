@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="class_win_forms_app1_1_1_property_management" kind="class" language="C#" prot="public">
+    <compoundname>WinFormsApp1::PropertyManagement</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1a16798c73800429b3a769be5846d539a0" prot="private" static="no" mutable="no">
+        <type>List&lt; Property &gt;</type>
+        <definition>List&lt;Property&gt; WinFormsApp1.PropertyManagement.UserProperties</definition>
+        <argsstring></argsstring>
+        <name>UserProperties</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.UserProperties</qualifiedname>
+        <initializer>= []</initializer>
+        <briefdescription>
+<para>List of properties owned by the user. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.cs" line="23" column="14" bodyfile="PropertyManagement.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1a37faf2344716d44fd5d244cddc5efe04" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer WinFormsApp1.PropertyManagement.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="8" column="48" bodyfile="PropertyManagement.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1a55fddb4a15c6626f199503d614ffc931" prot="private" static="no" mutable="no">
+        <type>ListBox</type>
+        <definition>ListBox WinFormsApp1.PropertyManagement.listBox1</definition>
+        <argsstring></argsstring>
+        <name>listBox1</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.listBox1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="171" column="25" bodyfile="PropertyManagement.Designer.cs" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1a7259bf29752bb900220486cabb11bb3a" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label WinFormsApp1.PropertyManagement.label1</definition>
+        <argsstring></argsstring>
+        <name>label1</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.label1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="172" column="23" bodyfile="PropertyManagement.Designer.cs" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1a1e4d521baa2a46b338819e0fe509701f" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label WinFormsApp1.PropertyManagement.label2</definition>
+        <argsstring></argsstring>
+        <name>label2</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.label2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="173" column="23" bodyfile="PropertyManagement.Designer.cs" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1aa7a7ea8da8a12a359d11a8a59537bed0" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label WinFormsApp1.PropertyManagement.label3</definition>
+        <argsstring></argsstring>
+        <name>label3</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.label3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="174" column="23" bodyfile="PropertyManagement.Designer.cs" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1ad17dd18813d132e7938b5d3cd1cb8ef2" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label WinFormsApp1.PropertyManagement.label4</definition>
+        <argsstring></argsstring>
+        <name>label4</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.label4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="175" column="23" bodyfile="PropertyManagement.Designer.cs" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1a266c66c0846261051d80fd854a2a09b2" prot="private" static="no" mutable="no">
+        <type>TextBox</type>
+        <definition>TextBox WinFormsApp1.PropertyManagement.textBoxNameRental</definition>
+        <argsstring></argsstring>
+        <name>textBoxNameRental</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.textBoxNameRental</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="176" column="25" bodyfile="PropertyManagement.Designer.cs" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1a186a4e0d4416e1a3c900fc20110127a5" prot="private" static="no" mutable="no">
+        <type>TextBox</type>
+        <definition>TextBox WinFormsApp1.PropertyManagement.textBoxAddress</definition>
+        <argsstring></argsstring>
+        <name>textBoxAddress</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.textBoxAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="177" column="25" bodyfile="PropertyManagement.Designer.cs" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1a6405aa980a5bd7d33d496434b3a791f1" prot="private" static="no" mutable="no">
+        <type>ComboBox</type>
+        <definition>ComboBox WinFormsApp1.PropertyManagement.comboBoxTypes</definition>
+        <argsstring></argsstring>
+        <name>comboBoxTypes</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.comboBoxTypes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="178" column="26" bodyfile="PropertyManagement.Designer.cs" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1a296e9abfcbc5c06ba94f1bf063a6042a" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label WinFormsApp1.PropertyManagement.label5</definition>
+        <argsstring></argsstring>
+        <name>label5</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.label5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="179" column="23" bodyfile="PropertyManagement.Designer.cs" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1a450e1a16dbf395a1bfd86c8dd3273d44" prot="private" static="no" mutable="no">
+        <type>TextBox</type>
+        <definition>TextBox WinFormsApp1.PropertyManagement.textBoxPrice</definition>
+        <argsstring></argsstring>
+        <name>textBoxPrice</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.textBoxPrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="180" column="25" bodyfile="PropertyManagement.Designer.cs" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_win_forms_app1_1_1_property_management_1a813081e011065fe1d084de5bb5dd5022" prot="private" static="no" mutable="no">
+        <type>DataGridView</type>
+        <definition>DataGridView WinFormsApp1.PropertyManagement.dataGridView1</definition>
+        <argsstring></argsstring>
+        <name>dataGridView1</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.dataGridView1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="181" column="30" bodyfile="PropertyManagement.Designer.cs" bodystart="181" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_win_forms_app1_1_1_property_management_1a1a2aa39b877aafbb74c9c0574006f24a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WinFormsApp1.PropertyManagement.PropertyManagement</definition>
+        <argsstring>()</argsstring>
+        <name>PropertyManagement</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.PropertyManagement</qualifiedname>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_win_forms_app1_1_1_property_management" kindref="compound">PropertyManagement</ref> form. Loads user properties and property types, and populates the list and combo boxes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.cs" line="29" column="16" bodyfile="PropertyManagement.cs" bodystart="29" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_win_forms_app1_1_1_property_management_1a8722f2077ed383c900b7bf925c6d29f2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WinFormsApp1.PropertyManagement.listBox1_SelectedIndexChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>listBox1_SelectedIndexChanged</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.listBox1_SelectedIndexChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Event handler for the selection change in the list box. Loads and displays the details of the selected property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of the event.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.cs" line="53" column="22" bodyfile="PropertyManagement.cs" bodystart="53" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_win_forms_app1_1_1_property_management_1a9bd3665f3aa6f200759cf6eb396049c7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WinFormsApp1.PropertyManagement.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="29" column="22" bodyfile="PropertyManagement.Designer.cs" bodystart="29" bodyend="167"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_win_forms_app1_1_1_property_management_1acf390506258e4f1d9c20576cc6514c03" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void WinFormsApp1.PropertyManagement.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>WinFormsApp1.PropertyManagement.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PropertyManagement.Designer.cs" line="14" column="33" bodyfile="PropertyManagement.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Form for managing properties within the tourism management system. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>WinFormsApp1.PropertyManagement</label>
+        <link refid="class_win_forms_app1_1_1_property_management"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="1">
+        <label>WinFormsApp1.PropertyManagement</label>
+        <link refid="class_win_forms_app1_1_1_property_management"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="PropertyManagement.cs" line="18" column="19" bodyfile="PropertyManagement.Designer.cs" bodystart="4" bodyend="182"/>
+    <listofallmembers>
+      <member refid="class_win_forms_app1_1_1_property_management_1a6405aa980a5bd7d33d496434b3a791f1" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>comboBoxTypes</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a37faf2344716d44fd5d244cddc5efe04" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>components</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a813081e011065fe1d084de5bb5dd5022" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>dataGridView1</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1acf390506258e4f1d9c20576cc6514c03" prot="protected" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>Dispose</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a9bd3665f3aa6f200759cf6eb396049c7" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>InitializeComponent</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a7259bf29752bb900220486cabb11bb3a" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>label1</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a1e4d521baa2a46b338819e0fe509701f" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>label2</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1aa7a7ea8da8a12a359d11a8a59537bed0" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>label3</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1ad17dd18813d132e7938b5d3cd1cb8ef2" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>label4</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a296e9abfcbc5c06ba94f1bf063a6042a" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>label5</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a55fddb4a15c6626f199503d614ffc931" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>listBox1</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a8722f2077ed383c900b7bf925c6d29f2" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>listBox1_SelectedIndexChanged</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a1a2aa39b877aafbb74c9c0574006f24a" prot="public" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>PropertyManagement</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a186a4e0d4416e1a3c900fc20110127a5" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>textBoxAddress</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a266c66c0846261051d80fd854a2a09b2" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>textBoxNameRental</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a450e1a16dbf395a1bfd86c8dd3273d44" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>textBoxPrice</name></member>
+      <member refid="class_win_forms_app1_1_1_property_management_1a16798c73800429b3a769be5846d539a0" prot="private" virt="non-virtual"><scope>WinFormsApp1::PropertyManagement</scope><name>UserProperties</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

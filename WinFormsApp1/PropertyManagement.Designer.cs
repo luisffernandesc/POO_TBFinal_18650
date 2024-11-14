@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             listBox1 = new ListBox();
             label1 = new Label();
             label2 = new Label();
@@ -38,6 +39,8 @@
             comboBoxTypes = new ComboBox();
             label5 = new Label();
             textBoxPrice = new TextBox();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // listBox1
@@ -61,7 +64,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(186, 164);
+            label2.Location = new Point(186, 169);
             label2.Name = "label2";
             label2.Size = new Size(66, 20);
             label2.TabIndex = 2;
@@ -123,11 +126,29 @@
             textBoxPrice.Size = new Size(151, 27);
             textBoxPrice.TabIndex = 10;
             // 
-            // management
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.BackgroundColor = SystemColors.Control;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(191, 203);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridView1.Size = new Size(553, 206);
+            dataGridView1.TabIndex = 11;
+            // 
+            // PropertyManagement
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dataGridView1);
             Controls.Add(textBoxPrice);
             Controls.Add(label5);
             Controls.Add(comboBoxTypes);
@@ -138,8 +159,9 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(listBox1);
-            Name = "management";
+            Name = "PropertyManagement";
             Text = "Form2";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -156,5 +178,6 @@
         private ComboBox comboBoxTypes;
         private Label label5;
         private TextBox textBoxPrice;
+        private DataGridView dataGridView1;
     }
 }

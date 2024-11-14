@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WinFormsApp1</name>
+    </assembly>
+    <members>
+        <member name="T:WinFormsApp1.Classes.Customer">
+            <summary>
+            Represents a customer within the tourism management system.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Customer.Id">
+            <summary>
+            Unique identifier for the customer.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Customer.Name">
+            <summary>
+            Name of the customer.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Customer.Contact">
+            <summary>
+            Contact information for the customer.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Classes.Customer.Load(System.Int32)">
+            <summary>
+            Loads customer details from the database based on the specified customer ID.
+            </summary>
+            <param name="customerID">The ID of the customer to be loaded.</param>
+            <returns>A <see cref="T:WinFormsApp1.Classes.Customer"/> object with the customer's details if found, or an empty object if not.</returns>
+        </member>
+        <member name="T:WinFormsApp1.Classes.Property">
+            <summary>
+            Represents a property within the tourism management system.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Property.Id">
+            <summary>
+            Unique identifier for the property.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Property.Name">
+            <summary>
+            Name of the property.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Property.Address">
+            <summary>
+            Address of the property.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Property.PricePerNight">
+            <summary>
+            Price per night for renting the property.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Property.Type_ID">
+            <summary>
+            Identifier for the type of the property.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Property.User_ID">
+            <summary>
+            Identifier for the user who owns the property.
+            </summary>
+        </member>
+        <member name="F:WinFormsApp1.Classes.Property._connectionString">
+            <summary>
+            Connection string to the SQLite database.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Classes.Property.LoadUserProperties(System.Int32)">
+            <summary>
+            Loads a list of properties from the database for a specific user.
+            </summary>
+            <param name="UserID">The ID of the user whose properties are to be loaded.</param>
+            <returns>A list of <see cref="T:WinFormsApp1.Classes.Property"/> objects representing the user's properties.</returns>
+        </member>
+        <member name="T:WinFormsApp1.Classes.PropertyTypes">
+            <summary>
+            Represents a property type within the tourism management system.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.PropertyTypes.Id">
+            <summary>
+            Unique identifier for the property type.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.PropertyTypes.Name">
+            <summary>
+            Name of the property type.
+            </summary>
+        </member>
+        <member name="F:WinFormsApp1.Classes.PropertyTypes._connectionString">
+            <summary>
+            Connection string to the SQLite database.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Classes.PropertyTypes.Load">
+            <summary>
+            Loads a list of property types from the database.
+            </summary>
+            <returns>A list of <see cref="T:WinFormsApp1.Classes.PropertyTypes"/> objects representing the property types.</returns>
+        </member>
+        <member name="T:WinFormsApp1.Classes.Reservation">
+            <summary>
+            Represents a reservation within the tourism management system.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Reservation.Id">
+            <summary>
+            Unique identifier for the reservation.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Reservation.CheckInDate">
+            <summary>
+            Check-in date for the reservation.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Reservation.CheckOutDate">
+            <summary>
+            Check-out date for the reservation.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Reservation.TotalPrice">
+            <summary>
+            Total price of the reservation.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Reservation.CustomerName">
+            <summary>
+            Name of the customer who made the reservation.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Reservation.CustomerContact">
+            <summary>
+            Contact information of the customer.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.Reservation.PropertyID">
+            <summary>
+            Identifier of the property associated with this reservation.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Classes.Reservation.LoadReservationProperties(System.Int32)">
+            <summary>
+            Loads a list of reservations from the database for a specific property.
+            </summary>
+            <param name="propertyID">The ID of the property whose reservations are to be loaded.</param>
+            <returns>A list of <see cref="T:WinFormsApp1.Classes.Reservation"/> objects representing the reservations for the specified property.</returns>
+        </member>
+        <member name="T:WinFormsApp1.Classes.User">
+            <summary>
+            Represents a user within the tourism management system.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.User.Id">
+            <summary>
+            Unique identifier for the user.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.User.Username">
+            <summary>
+            Username of the user.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Classes.User.Password">
+            <summary>
+            Password of the user.
+            </summary>
+        </member>
+        <member name="F:WinFormsApp1.Classes.User._connectionString">
+            <summary>
+            Connection string to the SQLite database.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Classes.User.Load(System.String)">
+            <summary>
+            Loads a user's data from the database by username.
+            </summary>
+            <param name="username">The username of the user to be loaded.</param>
+            <returns>True if the user was successfully loaded; otherwise, false.</returns>
+        </member>
+        <member name="T:WinFormsApp1.login">
+            <summary>
+            Form for user login within the tourism management system.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.login.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WinFormsApp1.login"/> form.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.login.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for the login button click.
+            Attempts to authenticate the user based on the entered username and password.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The event data.</param>
+        </member>
+        <member name="F:WinFormsApp1.login.components">
+            <summary>
+             Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.login.Dispose(System.Boolean)">
+            <summary>
+             Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WinFormsApp1.login.InitializeComponent">
+            <summary>
+             Required method for Designer support - do not modify
+             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:WinFormsApp1.PropertyManagement">
+            <summary>
+            Form for managing properties within the tourism management system.
+            </summary>
+        </member>
+        <member name="F:WinFormsApp1.PropertyManagement.UserProperties">
+            <summary>
+            List of properties owned by the user.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.PropertyManagement.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WinFormsApp1.PropertyManagement"/> form.
+            Loads user properties and property types, and populates the list and combo boxes.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.PropertyManagement.listBox1_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for the selection change in the list box.
+            Loads and displays the details of the selected property.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The event data.</param>
+        </member>
+        <member name="F:WinFormsApp1.PropertyManagement.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.PropertyManagement.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WinFormsApp1.PropertyManagement.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WinFormsApp1.ApplicationConfiguration">
+            <summary>
+             Bootstrap the application configuration.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.ApplicationConfiguration.Initialize">
+            <summary>
+             Bootstrap the application as follows:
+             <code>
+             global::System.Windows.Forms.Application.EnableVisualStyles();
+             global::System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+             global::System.Windows.Forms.Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            </code>
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="en-US">
+  <compounddef id="namespace_win_forms_app1" kind="namespace" language="C#">
+    <compoundname>WinFormsApp1</compoundname>
+    <innerclass refid="class_win_forms_app1_1_1login" prot="public">WinFormsApp1::login</innerclass>
+    <innerclass refid="class_win_forms_app1_1_1_program" prot="package">WinFormsApp1::Program</innerclass>
+    <innerclass refid="class_win_forms_app1_1_1_property_management" prot="public">WinFormsApp1::PropertyManagement</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Login.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>
