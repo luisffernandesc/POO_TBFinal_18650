@@ -66,17 +66,12 @@
             Identifier for the user who owns the property.
             </summary>
         </member>
-        <member name="F:WinFormsApp1.Classes.Property._connectionString">
+        <member name="M:WinFormsApp1.Classes.PropertyLoad.LoadUserProperties(System.Int32)">
             <summary>
-            Connection string to the SQLite database.
+            Loads properties from the DataBase using the UserID
             </summary>
-        </member>
-        <member name="M:WinFormsApp1.Classes.Property.LoadUserProperties(System.Int32)">
-            <summary>
-            Loads a list of properties from the database for a specific user.
-            </summary>
-            <param name="UserID">The ID of the user whose properties are to be loaded.</param>
-            <returns>A list of <see cref="T:WinFormsApp1.Classes.Property"/> objects representing the user's properties.</returns>
+            <param name="UserID"></param>
+            <returns></returns>
         </member>
         <member name="T:WinFormsApp1.Classes.PropertyTypes">
             <summary>
@@ -218,11 +213,6 @@
              the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="M:WinFormsApp1.Program.Main">
-            <summary>
-             The main entry point for the application.
-            </summary>
-        </member>
         <member name="T:WinFormsApp1.PropertyManagement">
             <summary>
             Form for managing properties within the tourism management system.
@@ -262,6 +252,11 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Program.Main">
+            <summary>
+             The main entry point for the application.
             </summary>
         </member>
         <member name="T:WinFormsApp1.ApplicationConfiguration">

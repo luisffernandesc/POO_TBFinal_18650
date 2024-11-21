@@ -8,6 +8,7 @@ namespace WinFormsApp1.Classes
     /// </summary>
     public class User
     {
+        #region Properties
         /// <summary>
         /// Unique identifier for the user.
         /// </summary>
@@ -27,7 +28,9 @@ namespace WinFormsApp1.Classes
         /// Connection string to the SQLite database.
         /// </summary>
         private string _connectionString = "Data Source=C:\\Users\\Pro\\source\\repos\\POO_Trabalho_Final_18650\\WinFormsApp1\\database.db;Version=3;";
+        #endregion
 
+        #region LoadUsersFromDatabase
         /// <summary>
         /// Loads a user's data from the database by username.
         /// </summary>
@@ -74,3 +77,5 @@ namespace WinFormsApp1.Classes
         }
     }
 }
+
+#endregion

@@ -29,7 +29,7 @@ namespace WinFormsApp1
         public PropertyManagement()
         {
             InitializeComponent();
-            UserProperties = Property.LoadUserProperties(1); // Loads properties for a specific user (user ID 1 in this case)
+            UserProperties = PropertyLoad.LoadUserProperties(1); // Loads properties for a specific user (user ID 1 in this case)
 
             // Populates the list box with property names.
             foreach (Property p in UserProperties)
