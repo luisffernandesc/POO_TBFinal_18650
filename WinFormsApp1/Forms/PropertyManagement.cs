@@ -38,7 +38,7 @@ namespace WinFormsApp1
             }
 
             // Loads property types and sets them as the data source for the combo box.
-            List<PropertyTypes> UserPropertyTypes = PropertyTypes.Load();
+            List<PropertyTypes> UserPropertyTypes = PropertyTypesLoad.Load();
             comboBoxTypes.DataSource = UserPropertyTypes;
             comboBoxTypes.ValueMember = "Id";
             comboBoxTypes.DisplayMember = "Name";
@@ -58,7 +58,7 @@ namespace WinFormsApp1
                 if (p.Name == listBox1.GetItemText(listBox1.SelectedItem))
                 {
                     // Loads reservations for the selected property.
-                    List<Reservation> reservationList = Reservation.LoadReservationProperties(p.Id);
+                    List<Reservation> reservationList = ReservationLoad.LoadReservationProperties(p.Id);
 
                     // Displays property details in text boxes and combo box.
                     textBoxNameRental.Text = p.Name;

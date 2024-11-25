@@ -24,13 +24,6 @@
             Contact information for the customer.
             </summary>
         </member>
-        <member name="M:WinFormsApp1.Classes.Customer.Load(System.Int32)">
-            <summary>
-            Loads customer details from the database based on the specified customer ID.
-            </summary>
-            <param name="customerID">The ID of the customer to be loaded.</param>
-            <returns>A <see cref="T:WinFormsApp1.Classes.Customer"/> object with the customer's details if found, or an empty object if not.</returns>
-        </member>
         <member name="T:WinFormsApp1.Classes.Property">
             <summary>
             Represents a property within the tourism management system.
@@ -93,12 +86,6 @@
             Connection string to the SQLite database.
             </summary>
         </member>
-        <member name="M:WinFormsApp1.Classes.PropertyTypes.Load">
-            <summary>
-            Loads a list of property types from the database.
-            </summary>
-            <returns>A list of <see cref="T:WinFormsApp1.Classes.PropertyTypes"/> objects representing the property types.</returns>
-        </member>
         <member name="T:WinFormsApp1.Classes.Reservation">
             <summary>
             Represents a reservation within the tourism management system.
@@ -139,7 +126,7 @@
             Identifier of the property associated with this reservation.
             </summary>
         </member>
-        <member name="M:WinFormsApp1.Classes.Reservation.LoadReservationProperties(System.Int32)">
+        <member name="M:WinFormsApp1.Classes.ReservationLoad.LoadReservationProperties(System.Int32)">
             <summary>
             Loads a list of reservations from the database for a specific property.
             </summary>
