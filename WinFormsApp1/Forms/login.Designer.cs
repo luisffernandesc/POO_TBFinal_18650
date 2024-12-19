@@ -102,7 +102,7 @@
             Controls.Add(textBoxUsername);
             Controls.Add(textBoxPassword);
             Name = "login";
-            Text = "Form1";
+            Text = "Login";
             ResumeLayout(false);
             PerformLayout();
         }

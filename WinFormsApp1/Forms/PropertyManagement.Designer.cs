@@ -40,6 +40,9 @@
             label5 = new Label();
             textBoxPrice = new TextBox();
             dataGridView1 = new DataGridView();
+            saveButton = new Button();
+            propertyID = new Label();
+            addReservationButton = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -140,14 +143,47 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridView1.Size = new Size(553, 206);
+            dataGridView1.Size = new Size(553, 172);
             dataGridView1.TabIndex = 11;
+            // 
+            // saveButton
+            // 
+            saveButton.Location = new Point(650, 380);
+            saveButton.Name = "saveButton";
+            saveButton.Size = new Size(94, 29);
+            saveButton.TabIndex = 12;
+            saveButton.Text = "Guardar";
+            saveButton.UseVisualStyleBackColor = true;
+            saveButton.Click += saveButton_Click;
+            // 
+            // propertyID
+            // 
+            propertyID.AutoSize = true;
+            propertyID.Location = new Point(12, 421);
+            propertyID.Name = "propertyID";
+            propertyID.Size = new Size(24, 20);
+            propertyID.TabIndex = 13;
+            propertyID.Text = "ID";
+            propertyID.Visible = false;
+            // 
+            // addReservationButton
+            // 
+            addReservationButton.Location = new Point(646, 165);
+            addReservationButton.Name = "addReservationButton";
+            addReservationButton.Size = new Size(98, 29);
+            addReservationButton.TabIndex = 14;
+            addReservationButton.Text = "Adicionar";
+            addReservationButton.UseVisualStyleBackColor = true;
+            addReservationButton.Click += addReservationButton_Click;
             // 
             // PropertyManagement
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(addReservationButton);
+            Controls.Add(propertyID);
+            Controls.Add(saveButton);
             Controls.Add(dataGridView1);
             Controls.Add(textBoxPrice);
             Controls.Add(label5);
@@ -160,7 +196,7 @@
             Controls.Add(label1);
             Controls.Add(listBox1);
             Name = "PropertyManagement";
-            Text = "Form2";
+            Text = "Lista de Reservas";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -179,5 +215,8 @@
         private Label label5;
         private TextBox textBoxPrice;
         private DataGridView dataGridView1;
+        private Button saveButton;
+        private Label propertyID;
+        private Button addReservationButton;
     }
 }

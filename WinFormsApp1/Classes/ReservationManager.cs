@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WinFormsApp1.Classes
 {
-    public class ReservationLoad
+    public class ReservationManager : Reservation
     {
         /// <summary>
         /// Loads a list of reservations from the database for a specific property.
@@ -38,7 +38,7 @@ namespace WinFormsApp1.Classes
                             while (reader.Read())
                             {
                                 // Loads customer information based on the Customer_ID.
-                                Customer customer = CustomerLoad.Load(reader.GetInt32(4));
+                                Customer customer = CustomerManager.Load(reader.GetInt32(4));
 
                                 // Creates a new Reservation object and populates it with data from the database.
                                 Reservation reservation = new Reservation
@@ -47,8 +47,7 @@ namespace WinFormsApp1.Classes
                                     CheckInDate = DateOnly.Parse(reader.GetString(1)),
                                     CheckOutDate = DateOnly.Parse(reader.GetString(2)),
                                     TotalPrice = reader.GetInt32(3),
-                                    CustomerName = customer.Name,
-                                    CustomerContact = customer.Contact,
+                                    CustomerID = reader.GetInt32(4),
                                     PropertyID = reader.GetInt32(5)
                                 };
 
@@ -67,5 +66,33 @@ namespace WinFormsApp1.Classes
                 return reservations;
             }
         }
-    }
+
+        public static int CalculateTotalPrice(DateTime checkIn, DateTime checkOut, string sPricePerNight)
+        {
+
+            int pricePerNight = 0;
+
+            try
+            {
+                pricePerNight = Convert.ToInt32(sPricePerNight);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Price Error: " + ex.Message);
+
+            }
+
+            if (checkOut > checkIn && pricePerNight > 0)
+            {
+                int totalDays = (checkOut - checkIn).Days;
+
+                int totalPrice = totalDays * pricePerNight;
+
+                return totalPrice;
+            }
+
+            return -1;
+        }
+
+    }    
 }

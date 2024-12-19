@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace WinFormsApp1.Classes
 {
+    #region Attributes
     /// <summary>
     /// Represents a property type within the tourism management system.
     /// </summary>
@@ -32,4 +33,5 @@ namespace WinFormsApp1.Classes
         /// </summary>
         /// <returns>A list of <see cref="PropertyTypes"/> objects representing the property types.</returns>
     }
+    #endregion
 }

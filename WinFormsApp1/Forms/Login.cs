@@ -1,4 +1,5 @@
 using WinFormsApp1.Classes;
+using WinFormsApp1.Forms;
 
 namespace WinFormsApp1
 {
@@ -33,7 +34,7 @@ namespace WinFormsApp1
                 if (textBoxPassword.Text == user.Password)
                 {
                     // Opens the PropertyManagement form and hides the login form.
-                    PropertyManagement window = new PropertyManagement();
+                    PropertyManagement window = new PropertyManagement(user.Id);
                     window.Show();
                     this.Hide();
                 }

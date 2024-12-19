@@ -24,6 +24,18 @@
             Contact information for the customer.
             </summary>
         </member>
+        <member name="T:WinFormsApp1.Classes.CustomerManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Classes.CustomerManager.Load(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="customerID"></param>
+            <returns></returns>
+        </member>
         <member name="T:WinFormsApp1.Classes.Property">
             <summary>
             Represents a property within the tourism management system.
@@ -58,13 +70,6 @@
             <summary>
             Identifier for the user who owns the property.
             </summary>
-        </member>
-        <member name="M:WinFormsApp1.Classes.PropertyLoad.LoadUserProperties(System.Int32)">
-            <summary>
-            Loads properties from the DataBase using the UserID
-            </summary>
-            <param name="UserID"></param>
-            <returns></returns>
         </member>
         <member name="T:WinFormsApp1.Classes.PropertyTypes">
             <summary>
@@ -111,14 +116,9 @@
             Total price of the reservation.
             </summary>
         </member>
-        <member name="P:WinFormsApp1.Classes.Reservation.CustomerName">
+        <member name="P:WinFormsApp1.Classes.Reservation.CustomerID">
             <summary>
-            Name of the customer who made the reservation.
-            </summary>
-        </member>
-        <member name="P:WinFormsApp1.Classes.Reservation.CustomerContact">
-            <summary>
-            Contact information of the customer.
+            ID of the customer who made the reservation.
             </summary>
         </member>
         <member name="P:WinFormsApp1.Classes.Reservation.PropertyID">
@@ -126,7 +126,7 @@
             Identifier of the property associated with this reservation.
             </summary>
         </member>
-        <member name="M:WinFormsApp1.Classes.ReservationLoad.LoadReservationProperties(System.Int32)">
+        <member name="M:WinFormsApp1.Classes.ReservationManager.LoadReservationProperties(System.Int32)">
             <summary>
             Loads a list of reservations from the database for a specific property.
             </summary>
@@ -164,6 +164,23 @@
             </summary>
             <param name="username">The username of the user to be loaded.</param>
             <returns>True if the user was successfully loaded; otherwise, false.</returns>
+        </member>
+        <member name="F:WinFormsApp1.Forms.AddReservation.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Forms.AddReservation.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WinFormsApp1.Forms.AddReservation.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
         </member>
         <member name="T:WinFormsApp1.login">
             <summary>
@@ -210,7 +227,7 @@
             List of properties owned by the user.
             </summary>
         </member>
-        <member name="M:WinFormsApp1.PropertyManagement.#ctor">
+        <member name="M:WinFormsApp1.PropertyManagement.#ctor(System.Int32)">
             <summary>
             Initializes a new instance of the <see cref="T:WinFormsApp1.PropertyManagement"/> form.
             Loads user properties and property types, and populates the list and combo boxes.
@@ -244,6 +261,22 @@
         <member name="M:WinFormsApp1.Program.Main">
             <summary>
              The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:WinFormsApp1.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:WinFormsApp1.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
             </summary>
         </member>
         <member name="T:WinFormsApp1.ApplicationConfiguration">
