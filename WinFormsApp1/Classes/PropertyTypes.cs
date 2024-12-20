@@ -23,15 +23,6 @@ namespace WinFormsApp1.Classes
         /// </summary>
         public string Name { get; set; }
 
-        /// <summary>
-        /// Connection string to the SQLite database.
-        /// </summary>
-        private string _connectionString = "Data Source=C:\\Users\\Pro\\source\\repos\\POO_Trabalho_Final_18650\\WinFormsApp1\\database.db;Version=3;";
-
-        /// <summary>
-        /// Loads a list of property types from the database.
-        /// </summary>
-        /// <returns>A list of <see cref="PropertyTypes"/> objects representing the property types.</returns>
     }
     #endregion
 }
