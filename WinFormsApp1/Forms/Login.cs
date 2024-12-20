@@ -24,29 +24,23 @@ namespace WinFormsApp1
         /// <param name="e">The event data.</param>
         private void button1_Click(object sender, EventArgs e)
         {
-            // Creates a new instance of the User class to handle authentication.
             User user = new User();
 
-            // Loads user data based on the entered username.
             if (user.Load(textBoxUsername.Text))
             {
-                // Checks if the entered password matches the user's password.
                 if (textBoxPassword.Text == user.Password)
                 {
-                    // Opens the PropertyManagement form and hides the login form.
                     PropertyManagement window = new PropertyManagement(user.Id);
                     window.Show();
                     this.Hide();
                 }
                 else
                 {
-                    // Displays an error message if the password is incorrect.
                     MessageBox.Show("Wrong Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                // Displays an error message if the username is incorrect or not found.
                 MessageBox.Show("Wrong User", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

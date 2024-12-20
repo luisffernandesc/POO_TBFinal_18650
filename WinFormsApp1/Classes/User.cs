@@ -30,7 +30,7 @@ namespace WinFormsApp1.Classes
         private string _connectionString = "Data Source=C:\\Users\\Pro\\source\\repos\\POO_Trabalho_Final_18650\\WinFormsApp1\\database.db;Version=3;";
         #endregion
 
-        #region LoadUsersFromDatabase
+        #region LoadUserFromDatabase
         /// <summary>
         /// Loads a user's data from the database by username.
         /// </summary>
@@ -38,25 +38,22 @@ namespace WinFormsApp1.Classes
         /// <returns>True if the user was successfully loaded; otherwise, false.</returns>
         public bool Load(string username)
         {
-            // Opens a connection to the SQLite database.
             using (SQLiteConnection connection = new SQLiteConnection(_connectionString))
             {
                 try
                 {
                     connection.Open();
+
                     string query = "SELECT id, username, password FROM users WHERE username = @username";
 
-                    // Prepares the SQL query to retrieve the user data based on the username.
                     using (SQLiteCommand command = new SQLiteCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@username", username);
 
-                        // Executes the query and reads the result.
                         using (SQLiteDataReader reader = command.ExecuteReader())
                         {
                             if (reader.Read())
                             {
-                                // Populates the User object with data from the database.
                                 Id = reader.GetInt32(0);
                                 Username = reader.GetString(1);
                                 Password = reader.GetString(2);
@@ -67,15 +64,12 @@ namespace WinFormsApp1.Classes
                 }
                 catch (Exception ex)
                 {
-                    // Captures and logs any exceptions that occur during the data loading process.
                     Console.WriteLine("Error loading data: " + ex.Message);
                 }
             }
 
-            // Returns false if the user was not found or an error occurred.
             return false;
         }
+        #endregion
     }
 }
-
-#endregion

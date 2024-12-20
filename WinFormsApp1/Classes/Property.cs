@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SQLite;
-using System.DirectoryServices.ActiveDirectory;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace WinFormsApp1.Classes
 {
@@ -46,6 +40,13 @@ namespace WinFormsApp1.Classes
         public int User_ID { get; set; }
         #endregion
 
+        #region Methods
+        /// <summary>
+        /// Saves the property details to the database. Updates the existing record in the "Properties" table.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the save operation was successful; otherwise, <c>false</c>.
+        /// </returns>
         public bool Save()
         {
             using (SQLiteConnection connection = new SQLiteConnection("Data Source=C:\\Users\\Pro\\source\\repos\\POO_Trabalho_Final_18650\\WinFormsApp1\\database.db;Version=3;"))
@@ -53,10 +54,9 @@ namespace WinFormsApp1.Classes
                 try
                 {
                     connection.Open();
+
                     string query = "UPDATE Properties SET Name = @name, Address = @address, PricePerNight = @pricePerNight, Type_ID = @type_ID WHERE ID = @id";
 
-
-                    // Executes the SQL query to retrieve property types.
                     using (SQLiteCommand command = new SQLiteCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@id", Id);
@@ -64,6 +64,7 @@ namespace WinFormsApp1.Classes
                         command.Parameters.AddWithValue("@address", Address);
                         command.Parameters.AddWithValue("@pricePerNight", PricePerNight);
                         command.Parameters.AddWithValue("@type_ID", Type_ID);
+
                         command.ExecuteNonQuery();
                     }
                 }
@@ -76,5 +77,6 @@ namespace WinFormsApp1.Classes
                 return true;
             }
         }
-    }      
+        #endregion
+    }
 }

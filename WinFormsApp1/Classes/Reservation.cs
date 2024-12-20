@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace WinFormsApp1.Classes
 {
@@ -15,6 +9,8 @@ namespace WinFormsApp1.Classes
     /// </summary>
     public class Reservation
     {
+        #region Properties
+
         /// <summary>
         /// Unique identifier for the reservation.
         /// </summary>
@@ -45,6 +41,16 @@ namespace WinFormsApp1.Classes
         /// </summary>
         public int PropertyID { get; set; }
 
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Saves the reservation to the database.
+        /// </summary>
+        /// <returns>
+        /// The ID of the newly created reservation if successful; otherwise, -1.
+        /// </returns>
         public int Save()
         {
             using (SQLiteConnection connection = new SQLiteConnection("Data Source=C:\\Users\\Pro\\source\\repos\\POO_Trabalho_Final_18650\\WinFormsApp1\\database.db;Version=3;"))
@@ -55,7 +61,6 @@ namespace WinFormsApp1.Classes
                     string query = "INSERT INTO Reservations (CheckIn_Date, CheckOut_Date, TotalPrice, Customer_ID, Property_ID) VALUES (@checkIn_Date, @checkOut_Date, @totalPrice, @customer_ID, @property_ID)";
                     int id = -1;
 
-                    // Executes the SQL query to retrieve property types.
                     using (SQLiteCommand command = new SQLiteCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@checkIn_Date", CheckInDate);
@@ -63,6 +68,7 @@ namespace WinFormsApp1.Classes
                         command.Parameters.AddWithValue("@totalPrice", TotalPrice);
                         command.Parameters.AddWithValue("@customer_ID", CustomerID);
                         command.Parameters.AddWithValue("@property_ID", PropertyID);
+
                         id = Convert.ToInt32(command.ExecuteScalar());
                         return id;
                     }
@@ -72,12 +78,10 @@ namespace WinFormsApp1.Classes
                     Console.WriteLine("Error saving data: " + ex.Message);
                     return -1;
                 }
-
             }
         }
+
+        #endregion
     }
-}
     #endregion
-
-
-
+}

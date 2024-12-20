@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WinFormsApp1.Classes
 {
+    #region Reservation Management
+    /// <summary>
+    /// Provides methods for managing reservations in the system.
+    /// </summary>
     public class ReservationManager : Reservation
     {
+        #region Methods
+
         /// <summary>
         /// Loads a list of reservations from the database for a specific property.
         /// </summary>
@@ -16,10 +19,8 @@ namespace WinFormsApp1.Classes
         /// <returns>A list of <see cref="Reservation"/> objects representing the reservations for the specified property.</returns>
         public static List<Reservation> LoadReservationProperties(int propertyID)
         {
-            // Creates a list to store the reservations loaded from the database.
             List<Reservation> reservations = new List<Reservation>();
 
-            // Opens a connection to the SQLite database.
             using (SQLiteConnection connection = new SQLiteConnection("Data Source=C:\\Users\\Pro\\source\\repos\\POO_Trabalho_Final_18650\\WinFormsApp1\\database.db;Version=3;"))
             {
                 try
@@ -27,20 +28,16 @@ namespace WinFormsApp1.Classes
                     connection.Open();
                     string query = "SELECT ID, CheckIn_Date, CheckOut_Date, TotalPrice, Customer_ID, Property_ID FROM Reservations WHERE Property_ID = @Property_ID";
 
-                    // Prepares the SQL query to retrieve reservations for a specific property based on propertyID.
                     using (SQLiteCommand command = new SQLiteCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@Property_ID", propertyID);
 
-                        // Executes the query and reads the result.
                         using (SQLiteDataReader reader = command.ExecuteReader())
                         {
                             while (reader.Read())
                             {
-                                // Loads customer information based on the Customer_ID.
                                 Customer customer = CustomerManager.Load(reader.GetInt32(4));
 
-                                // Creates a new Reservation object and populates it with data from the database.
                                 Reservation reservation = new Reservation
                                 {
                                     Id = reader.GetInt32(0),
@@ -58,18 +55,24 @@ namespace WinFormsApp1.Classes
                 }
                 catch (Exception ex)
                 {
-                    // Captures and logs any exceptions that occur during the data loading process.
                     Console.WriteLine("Error loading data: " + ex.Message);
                 }
 
-                // Returns the list of loaded reservations.
                 return reservations;
             }
         }
 
+        /// <summary>
+        /// Calculates the total price of a reservation based on the number of nights and the price per night.
+        /// </summary>
+        /// <param name="checkIn">The check-in date.</param>
+        /// <param name="checkOut">The check-out date.</param>
+        /// <param name="sPricePerNight">The price per night as a string.</param>
+        /// <returns>
+        /// The total price of the reservation if valid input is provided; otherwise, -1.
+        /// </returns>
         public static int CalculateTotalPrice(DateTime checkIn, DateTime checkOut, string sPricePerNight)
         {
-
             int pricePerNight = 0;
 
             try
@@ -79,13 +82,11 @@ namespace WinFormsApp1.Classes
             catch (Exception ex)
             {
                 Console.WriteLine("Price Error: " + ex.Message);
-
             }
 
             if (checkOut > checkIn && pricePerNight > 0)
             {
                 int totalDays = (checkOut - checkIn).Days;
-
                 int totalPrice = totalDays * pricePerNight;
 
                 return totalPrice;
@@ -94,5 +95,7 @@ namespace WinFormsApp1.Classes
             return -1;
         }
 
-    }    
+        #endregion
+    }
+    #endregion
 }

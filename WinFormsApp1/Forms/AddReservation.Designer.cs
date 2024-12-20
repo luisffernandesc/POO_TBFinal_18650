@@ -105,7 +105,6 @@
             pricePerNightTextBox.ReadOnly = true;
             pricePerNightTextBox.Size = new Size(125, 27);
             pricePerNightTextBox.TabIndex = 6;
-            pricePerNightTextBox.TextChanged += pricePerNightTextBox_TextChanged;
             // 
             // label4
             // 
@@ -158,6 +157,7 @@
             saveButton.TabIndex = 12;
             saveButton.Text = "Guardar Reserva";
             saveButton.UseVisualStyleBackColor = true;
+            saveButton.Click += saveButton_Click_1;
             // 
             // propertyNameLabel
             // 

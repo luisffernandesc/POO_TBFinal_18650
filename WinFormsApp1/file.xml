@@ -21,20 +21,33 @@
         </member>
         <member name="P:WinFormsApp1.Classes.Customer.Contact">
             <summary>
-            Contact information for the customer.
+            Contact of the customer.
             </summary>
+        </member>
+        <member name="M:WinFormsApp1.Classes.Customer.Save">
+            <summary>
+            Saves the customer to the database. If the customer ID is -1, a new record is created.
+            Otherwise, the existing record is updated.
+            </summary>
+            <returns>The ID of the saved customer, or -1 if an error occurs.</returns>
         </member>
         <member name="T:WinFormsApp1.Classes.CustomerManager">
             <summary>
-            
+            Provides functionality for managing customer data within the tourism management system.
             </summary>
         </member>
         <member name="M:WinFormsApp1.Classes.CustomerManager.Load(System.Int32)">
             <summary>
-            
+            Loads a customer from the database based on the provided customer ID.
             </summary>
-            <param name="customerID"></param>
-            <returns></returns>
+            <param name="customerID">The unique identifier of the customer to load.</param>
+            <returns>A <see cref="T:WinFormsApp1.Classes.Customer"/> object populated with data from the database.</returns>
+        </member>
+        <member name="M:WinFormsApp1.Classes.CustomerManager.LoadAllCustomers">
+            <summary>
+            Loads all customers from the database.
+            </summary>
+            <returns>A list of <see cref="T:WinFormsApp1.Classes.Customer"/> objects populated with data from the database.</returns>
         </member>
         <member name="T:WinFormsApp1.Classes.Property">
             <summary>
@@ -70,6 +83,36 @@
             <summary>
             Identifier for the user who owns the property.
             </summary>
+        </member>
+        <member name="M:WinFormsApp1.Classes.Property.Save">
+            <summary>
+            Saves the property details to the database. Updates the existing record in the "Properties" table.
+            </summary>
+            <returns>
+            Returns <c>true</c> if the save operation was successful; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:WinFormsApp1.Classes.PropertiesManager">
+            <summary>
+            Provides methods to manage properties and property types in the tourism management system.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Classes.PropertiesManager.LoadTypes">
+            <summary>
+            Loads all property types from the database.
+            </summary>
+            <returns>
+            A list of <see cref="T:WinFormsApp1.Classes.PropertyTypes"/> objects representing all property types.
+            </returns>
+        </member>
+        <member name="M:WinFormsApp1.Classes.PropertiesManager.LoadUserProperties(System.Int32)">
+            <summary>
+            Loads all properties associated with a specific user from the database.
+            </summary>
+            <param name="UserID">The ID of the user whose properties are to be loaded.</param>
+            <returns>
+            A list of <see cref="T:WinFormsApp1.Classes.Property"/> objects representing the user's properties.
+            </returns>
         </member>
         <member name="T:WinFormsApp1.Classes.PropertyTypes">
             <summary>
@@ -126,12 +169,36 @@
             Identifier of the property associated with this reservation.
             </summary>
         </member>
+        <member name="M:WinFormsApp1.Classes.Reservation.Save">
+            <summary>
+            Saves the reservation to the database.
+            </summary>
+            <returns>
+            The ID of the newly created reservation if successful; otherwise, -1.
+            </returns>
+        </member>
+        <member name="T:WinFormsApp1.Classes.ReservationManager">
+            <summary>
+            Provides methods for managing reservations in the system.
+            </summary>
+        </member>
         <member name="M:WinFormsApp1.Classes.ReservationManager.LoadReservationProperties(System.Int32)">
             <summary>
             Loads a list of reservations from the database for a specific property.
             </summary>
             <param name="propertyID">The ID of the property whose reservations are to be loaded.</param>
             <returns>A list of <see cref="T:WinFormsApp1.Classes.Reservation"/> objects representing the reservations for the specified property.</returns>
+        </member>
+        <member name="M:WinFormsApp1.Classes.ReservationManager.CalculateTotalPrice(System.DateTime,System.DateTime,System.String)">
+            <summary>
+            Calculates the total price of a reservation based on the number of nights and the price per night.
+            </summary>
+            <param name="checkIn">The check-in date.</param>
+            <param name="checkOut">The check-out date.</param>
+            <param name="sPricePerNight">The price per night as a string.</param>
+            <returns>
+            The total price of the reservation if valid input is provided; otherwise, -1.
+            </returns>
         </member>
         <member name="T:WinFormsApp1.Classes.User">
             <summary>
@@ -164,6 +231,90 @@
             </summary>
             <param name="username">The username of the user to be loaded.</param>
             <returns>True if the user was successfully loaded; otherwise, false.</returns>
+        </member>
+        <member name="T:WinFormsApp1.Forms.AddReservation">
+            <summary>
+            Form to add a reservation to a property.
+            </summary>
+        </member>
+        <member name="F:WinFormsApp1.Forms.AddReservation.CustomerList">
+            <summary>
+            List of customers for selection in the reservation form.
+            </summary>
+        </member>
+        <member name="F:WinFormsApp1.Forms.AddReservation.PropertyID">
+            <summary>
+            Property ID for the current property being reserved.
+            </summary>
+        </member>
+        <member name="F:WinFormsApp1.Forms.AddReservation.PricePerNight">
+            <summary>
+            Price per night for the property.
+            </summary>
+        </member>
+        <member name="F:WinFormsApp1.Forms.AddReservation.SelectedCustomerID">
+            <summary>
+            The ID of the selected customer.
+            </summary>
+        </member>
+        <member name="E:WinFormsApp1.Forms.AddReservation.ReservationAdded">
+            <summary>
+            Event triggered when a reservation is added successfully.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Forms.AddReservation.#ctor(System.Int32,System.Int32,System.String)">
+            <summary>
+            Initializes the AddReservation form with property ID, price per night, and property name.
+            </summary>
+            <param name="propertyID">The ID of the property being reserved.</param>
+            <param name="pricePerNight">The price per night for the property.</param>
+            <param name="propertyName">The name of the property.</param>
+        </member>
+        <member name="M:WinFormsApp1.Forms.AddReservation.checkInDatePicker_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for when the check-in date is changed.
+            Updates the total price based on check-in and check-out dates.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Forms.AddReservation.checkOutDatePicker_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for when the check-out date is changed.
+            Updates the total price based on check-in and check-out dates.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Forms.AddReservation.RefreshCustomerUI">
+            <summary>
+            Toggles the UI for adding a new customer.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Forms.AddReservation.newClientButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for clicking the new customer button.
+            Enables or disables the customer UI for creating a new client.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Forms.AddReservation.saveNewClientButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for saving a new customer.
+            Adds the new customer to the list if saved successfully.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Forms.AddReservation.listBox1_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for selecting a customer from the list box.
+            Displays the selected customer's details in the text fields.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Forms.AddReservation.addReservationToDatabase">
+            <summary>
+            Adds the reservation to the database and closes the form.
+            </summary>
+        </member>
+        <member name="M:WinFormsApp1.Forms.AddReservation.saveButton_Click_1(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for saving a reservation.
+            Invokes the ReservationAdded event after saving.
+            </summary>
         </member>
         <member name="F:WinFormsApp1.Forms.AddReservation.components">
             <summary>
@@ -232,11 +383,36 @@
             Initializes a new instance of the <see cref="T:WinFormsApp1.PropertyManagement"/> form.
             Loads user properties and property types, and populates the list and combo boxes.
             </summary>
+            <param name="userID">The ID of the user who owns the properties.</param>
         </member>
         <member name="M:WinFormsApp1.PropertyManagement.listBox1_SelectedIndexChanged(System.Object,System.EventArgs)">
             <summary>
             Event handler for the selection change in the list box.
             Loads and displays the details of the selected property.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The event data.</param>
+        </member>
+        <member name="M:WinFormsApp1.PropertyManagement.saveButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for the save button click.
+            Updates the selected property with the modified values.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The event data.</param>
+        </member>
+        <member name="M:WinFormsApp1.PropertyManagement.AddReservation_ReservationAdded(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for when a reservation is added.
+            Reloads the reservations for the selected property.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The event data.</param>
+        </member>
+        <member name="M:WinFormsApp1.PropertyManagement.addReservationButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for the add reservation button click.
+            Opens the add reservation window.
             </summary>
             <param name="sender">The source of the event.</param>
             <param name="e">The event data.</param>

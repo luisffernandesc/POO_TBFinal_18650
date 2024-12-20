@@ -8,21 +8,21 @@ using System.Threading.Tasks;
 namespace WinFormsApp1.Classes
 {
     /// <summary>
-    /// 
+    /// Provides functionality for managing customer data within the tourism management system.
     /// </summary>
     public class CustomerManager : Customer
     {
+        #region Methods
+
         /// <summary>
-        /// 
+        /// Loads a customer from the database based on the provided customer ID.
         /// </summary>
-        /// <param name="customerID"></param>
-        /// <returns></returns>
+        /// <param name="customerID">The unique identifier of the customer to load.</param>
+        /// <returns>A <see cref="Customer"/> object populated with data from the database.</returns>
         public static Customer Load(int customerID)
         {
-            // Creates a new instance of Customer to hold the loaded data.
             Customer customer = new Customer();
 
-            // Opens a connection to the SQLite database.
             using (SQLiteConnection connection = new SQLiteConnection("Data Source=C:\\Users\\Pro\\source\\repos\\POO_Trabalho_Final_18650\\WinFormsApp1\\database.db;Version=3;"))
             {
                 try
@@ -30,12 +30,10 @@ namespace WinFormsApp1.Classes
                     connection.Open();
                     string query = "SELECT ID, Name, Contact FROM Customers WHERE ID = @Customer_ID";
 
-                    // Prepares the SQL query to retrieve the customer data based on customerID.
                     using (SQLiteCommand command = new SQLiteCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@Customer_ID", customerID);
 
-                        // Executes the query and reads the result.
                         using (SQLiteDataReader reader = command.ExecuteReader())
                         {
                             if (reader.Read())
@@ -50,21 +48,21 @@ namespace WinFormsApp1.Classes
                 }
                 catch (Exception ex)
                 {
-                    // Captures and logs any exceptions that occur during the data loading process.
                     Console.WriteLine("Error loading data: " + ex.Message);
                 }
 
-                // Returns the populated Customer object.
                 return customer;
             }
         }
 
+        /// <summary>
+        /// Loads all customers from the database.
+        /// </summary>
+        /// <returns>A list of <see cref="Customer"/> objects populated with data from the database.</returns>
         public static List<Customer> LoadAllCustomers()
         {
-            // Creates a new instance of Customer to hold the loaded data.
             List<Customer> customers = new List<Customer>();
 
-            // Opens a connection to the SQLite database.
             using (SQLiteConnection connection = new SQLiteConnection("Data Source=C:\\Users\\Pro\\source\\repos\\POO_Trabalho_Final_18650\\WinFormsApp1\\database.db;Version=3;"))
             {
                 try
@@ -72,20 +70,17 @@ namespace WinFormsApp1.Classes
                     connection.Open();
                     string query = "SELECT ID, Name, Contact FROM Customers";
 
-                    // Prepares the SQL query to retrieve the customer data based on customerID.
                     using (SQLiteCommand command = new SQLiteCommand(query, connection))
                     {
-                        // Executes the query and reads the result.
                         using (SQLiteDataReader reader = command.ExecuteReader())
                         {
-                            while(reader.Read())
+                            while (reader.Read())
                             {
                                 Customer customer = new Customer
                                 {
                                     Id = reader.GetInt32(0),
                                     Name = reader.GetString(1),
                                     Contact = reader.GetString(2)
-
                                 };
                                 customers.Add(customer);
                             }
@@ -94,13 +89,13 @@ namespace WinFormsApp1.Classes
                 }
                 catch (Exception ex)
                 {
-                    // Captures and logs any exceptions that occur during the data loading process.
                     Console.WriteLine("Error loading customers: " + ex.Message);
                 }
 
-                // Returns the populated Customer object.
                 return customers;
             }
         }
+
+        #endregion
     }
 }
